@@ -97,7 +97,37 @@ html::-webkit-scrollbar{
 
 .main-title{
     font-size: 8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 .main-title-2{
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-top: 20px;
+
 }
+
+
+.bt-shop-now{
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: black;
+    font-size: 1.3em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.bt-shop-now:hover{
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+

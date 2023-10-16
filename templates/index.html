@@ -8,8 +8,10 @@
         <div class="img">
             <img  src="{{ url_for('static', filename='images/design/home/big_moustache.png') }}" alt="Big moustache">
         </div>
-        <h2 class="main-title-2">OFFICIAL ONLINE SHOP</h2>   
-        <a href="#">SHOP NOW</a>
+        <h2 class="main-title-2">OFFICIAL ONLINE SHOP</h2> 
+            <div class="bt-shop-now">
+                <a href="{{url_for('men')}}">SHOP NOW</a>
+            </div>  
     </div>
     <div class="img">
         <img  id="background-picture" src="{{ url_for('static', filename='images/design/home/3tshirts_001.png') }}" alt="Three OKKGG t-shirts">
