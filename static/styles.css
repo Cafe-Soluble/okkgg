@@ -67,6 +67,16 @@ html::-webkit-scrollbar{
 
 /* HOME CONTENT START */
 
+div.home-content{
+    background-image: url("images/design/home/3tshirts_001.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    margin-top: -30px;
+    width: 100vw;
+    height: 670px;
+}
+
 .bg-image{
     background-image: url("/static/images/background/bw_tshirts_bg.png");
     background-size: cover; 
@@ -98,12 +108,13 @@ html::-webkit-scrollbar{
 .main-title{
     font-size: 8em;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding-top: 70px;
 
 }
 .main-title-2{
     font-size: 2.5em;
-    margin-top: 20px;
+    margin-top: 70px;
 
 }
 
@@ -115,7 +126,7 @@ html::-webkit-scrollbar{
     padding-bottom: 7px;
     width: 200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 60px;
     color: black;
     font-size: 1.3em;
     border-radius: 10px;
