@@ -44,25 +44,25 @@
               Collection
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Hommes</a></li>
-              <li><a class="dropdown-item" href="#">Femmes</a></li>
+              <li><a class="dropdown-item" href="{{url_for('men')}}">Hommes</a></li>
+              <li><a class="dropdown-item" href="{{url_for('women')}}">Femmes</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Lookbook</a></li>
+              <li><a class="dropdown-item" href="{{url_for('lookbook')}}">Lookbook</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">À propos de nous</a>
+            <a class="nav-link" href="{{url_for('about_us')}}">À propos de nous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item nav-shopping">
-                <a class="nav-link" href="#"><span class="material-symbols-outlined nav-orange">login</span><span class="nav-orange nav-orange-text">Connexion</span> </a>
+                <a class="nav-link" href="{{url_for('login')}}"><span class="material-symbols-outlined nav-orange">login</span><span class="nav-orange nav-orange-text">Connexion</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><span class="material-symbols-outlined nav-orange">shopping_cart</span><span class="nav-orange nav-orange-text">Panier</span></a>
+                <a class="nav-link" href="{{url_for('basket')}}"><span class="material-symbols-outlined nav-orange">shopping_cart</span><span class="nav-orange nav-orange-text">Panier</span></a>
               </li>
         </ul>
       </div>
