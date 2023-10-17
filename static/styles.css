@@ -23,8 +23,6 @@ html::-webkit-scrollbar{
 
 /* NAV BAR START */
 
-#navbar{
-}
 
 .nav-item .nav-link{
     color: rgb(238, 238, 238);
@@ -32,13 +30,13 @@ html::-webkit-scrollbar{
     font-weight: 550;
     transition: 0.5s;
 }
+
 .nav-item .nav-link:hover{
     color: rgb(185, 185, 185);
 }
 
 .nav-orange{
     color: orange;
-
 }
 
 .nav-orange-text{
@@ -49,8 +47,7 @@ html::-webkit-scrollbar{
     vertical-align: middle;
 }
 .nav-orange-text:hover{
- color: rgb(223, 146, 3);
-
+     color: rgb(223, 146, 3);
 }
 
 .material-symbols-outlined, .nav-item{
@@ -142,14 +139,7 @@ a{
 }
 
 
-/* HOME : WOMEN & MEN SECTION */
-
-
-.women-collection{
-    background-color: lightgray; /* Optionnel : Ajoutez une couleur de fond pour visualiser l'espace réservé */
-}
-
-
+/* START HOME : WOMEN & MEN SECTION */
 
 
 
@@ -161,6 +151,7 @@ a{
     font-size: 2.5em;
     margin-right: 10px;
     margin-left: 10px;
+    /* border: solid red; */
 }
 
 .collection{
@@ -185,7 +176,6 @@ a{
 
 .collection a:hover{
     transform: scale(1.1); /* Zoom de 10% (110%) sur la div */
-      
     transition: 0.5s;
   }
   
@@ -210,17 +200,17 @@ a{
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: scale(1.2);
-    min-height: 1000px;
+    transform: scale(1);
+    min-height: 2000px;
     max-height: 100vh;
 }
 
-.col{
+/* .col{
     border: solid red;
 }
 .col-lookbook{
     border: solid red;
-}
+} */
 
 .lookbook-text{
     background-color: rgba(247, 247, 247, 0.644);
