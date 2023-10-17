@@ -8,18 +8,6 @@
     
 }
 
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background: red;
-    border-radius: 10px;
-}
-
-html::-webkit-scrollbar{
-    width: 10px;
-}
 
 /* NAV BAR START */
 
@@ -138,6 +126,14 @@ a{
     color: inherit;
 }
 
+.big-moustache-home{
+
+    /* i just wanted to try this effect. I dont like it, i'll delete it later */
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
 
 /* START HOME : WOMEN & MEN SECTION */
 
@@ -168,7 +164,7 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 1s;
+    transition: all 2s;
     height: 100%;
     width: 100%;
 }
@@ -176,7 +172,7 @@ a{
 
 .collection a:hover{
     transform: scale(1.1); /* Zoom de 10% (110%) sur la div */
-    transition: 0.5s;
+    transition: 2s;
   }
   
 .women-collection{
@@ -184,7 +180,7 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 1s;
+    transition: all 2s;
     height: 100%;
     width: 100%;
 }
@@ -220,3 +216,42 @@ a{
 
 
 /* HOME CONTENT END */
+
+
+
+
+/* FADEIN EFFECT */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* END FADEIN EFFECT */
