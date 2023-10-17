@@ -183,7 +183,7 @@ a{
 }
 
 
-.collection div:hover{
+.collection a:hover{
     transform: scale(1.1); /* Zoom de 10% (110%) sur la div */
       
     transition: 0.5s;
