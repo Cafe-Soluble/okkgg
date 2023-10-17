@@ -113,7 +113,7 @@ div.home-content{
 }
 .main-title-2{
     font-size: 2.5em;
-    margin-top: 70px;
+
 
 }
 
@@ -142,7 +142,7 @@ a{
 }
 
 
-/* HOME COLLECTION */
+/* HOME : WOMEN & MEN SECTION */
 
 
 .women-collection{
@@ -198,5 +198,35 @@ a{
     height: 100%;
     width: 100%;
 }
+
+
+
+/* END HOME: MEN & WOMEN SECTION  */
+
+/* START HOME: LOOKBOOK SECTION */
+
+.row-lookbook{
+    background-image: url("/static/images/design/home/lookbook-min.jpg"); /* Spécifiez le chemin de votre image de fond */
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.2);
+    min-height: 1000px;
+    max-height: 100vh;
+}
+
+.col{
+    border: solid red;
+}
+.col-lookbook{
+    border: solid red;
+}
+
+.lookbook-text{
+    background-color: rgba(247, 247, 247, 0.644);
+    color: black;
+    vertical-align: center;
+}
+
 
 /* HOME CONTENT END */
