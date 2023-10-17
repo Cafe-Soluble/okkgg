@@ -81,7 +81,6 @@ div.home-content{
     background-image: url("/static/images/background/bw_tshirts_bg.png");
     background-size: cover; 
     background-repeat: no-repeat;
-    background-color: aquamarine;
     width: 100vw;
     height: 100vh;
 }
@@ -92,7 +91,7 @@ div.home-content{
     text-align: center;
 
 }
-/* HOME CONTENT END */
+
 #background-picture {
     width: 100vw;
     height: 75vh;
@@ -142,3 +141,62 @@ a{
     color: inherit;
 }
 
+
+/* HOME COLLECTION */
+
+
+.women-collection{
+    background-color: lightgray; /* Optionnel : Ajoutez une couleur de fond pour visualiser l'espace réservé */
+}
+
+
+
+
+
+.custom-row-height{
+    height: 40vw;
+}
+
+.title-collection{
+    font-size: 2.5em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.collection{
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.men-collection{
+    background: url("/static/images/design/home/men_collection-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+}
+
+
+.collection div:hover{
+    transform: scale(1.1); /* Zoom de 10% (110%) sur la div */
+      
+    transition: 0.5s;
+  }
+  
+.women-collection{
+    background-image: url("/static/images/design/home/women_collection-min.jpg"); /* Spécifiez le chemin de votre image de fond */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+}
+
+/* HOME CONTENT END */
