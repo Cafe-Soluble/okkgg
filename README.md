@@ -19,6 +19,20 @@ python3 -m pip --version
 
 python3 -m pip install virtualenv
 
+### Go to the project folder
+
+```bash
+  cd Path/To/The/Project/Folder/
+```
+You can verify if you are in the project folder by using both line commandes : 
+```bash
+  pwd
+```
+or
+```bash
+  ls
+```
+
 ### Create a new virtual environment (MacOS and Linux)
 
 ```bash
