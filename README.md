@@ -24,7 +24,7 @@ python3 -m pip install virtualenv
 ```bash
   cd Path/To/The/Project/Folder/
 ```
-You can verify if you are in the project folder by using both line commandes : 
+You can verify if you are in the project folder by using both command lines: 
 ```bash
   pwd
 ```
