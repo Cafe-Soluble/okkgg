@@ -1,5 +1,6 @@
 
-## How to run this project
+# Start the web server
+## How to first run this project
 
 ### Install Python
 
@@ -57,3 +58,36 @@ pip install -r requirements.txt
 
 And open your webrowser to http://localhost:5000/
 
+## How to run this project when all the requirements are already installed
+
+### Go to the project folder
+
+```bash
+  cd Path/To/The/Project/Folder/
+```
+
+Better option : just open the folder in VS Code and use the terminal inside the software ; you'll be in the main folder project.
+
+### Run the following command lines : 
+
+```bash
+source env/bin/activate
+```
+```bash
+    python3 main.py
+```
+
+And open your webrowser to http://localhost:5000/
+
+# How does the server and website work?
+## File structure
+Html files are always in the templates folder
+Images, videos, music files, etc. are always in the static folder.
+
+
+## Links to other pages
+Links to other pages don't work the same way as with "classic" HTML. You need to use url_for(""). Just look at some example inside the index.html.  
+
+
+## The layout
+The layout.html file contains all the information present on all pages of the website (navbar, footer, etc.).
