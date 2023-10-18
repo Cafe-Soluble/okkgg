@@ -17,8 +17,15 @@ python3 -m pip --version
 ```
 
 ### Install virtualven
-
+```bash
 python3 -m pip install virtualenv
+```
+### Optional : Use git to clone and update the project !
+```bash
+git clone https://github.com/Cafe-Soluble/okkgg.git
+git remote add origin https://github.com/Cafe-Soluble/okkgg.git
+```
+
 
 ### Go to the project folder
 
@@ -68,6 +75,11 @@ And open your webrowser to http://localhost:5000/
 
 Better option : just open the folder in VS Code and use the terminal inside the software ; you'll be in the main folder project.
 
+### Optional : update the last version of this project with Git : 
+You need to have followed the Git instructions for the previous installation procedure, then : 
+```bash
+  cd git pull origin main
+```
 ### Run the following command lines : 
 
 ```bash
