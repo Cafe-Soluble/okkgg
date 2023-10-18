@@ -1,4 +1,7 @@
 
+# OKKGG Website 
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
 # Start the web server
 ## How to first run this project
 
@@ -20,7 +23,7 @@ python3 -m pip --version
 ```bash
 python3 -m pip install virtualenv
 ```
-### Optional : Use git to clone and update the project !
+### Optional step: Use git to clone and update the project!
 ```bash
 git clone https://github.com/Cafe-Soluble/okkgg.git
 git remote add origin https://github.com/Cafe-Soluble/okkgg.git
@@ -70,36 +73,36 @@ And open your webrowser to http://localhost:5000/
 ### Go to the project folder
 
 ```bash
-  cd Path/To/The/Project/Folder/
+cd Path/To/The/Project/Folder/
 ```
 
 Better option : just open the folder in VS Code and use the terminal inside the software ; you'll be in the main folder project.
 
-### Optional : update the last version of this project with Git : 
+### Optional step: update the last version of this project with Git: 
 You need to have followed the Git instructions for the previous installation procedure, then : 
 ```bash
-  cd git pull origin main
+cd git pull origin main
 ```
-### Run the following command lines : 
+### Run the following command lines: 
 
 ```bash
 source env/bin/activate
 ```
 ```bash
-    python3 main.py
+python3 main.py
 ```
 
 And open your webrowser to http://localhost:5000/
 
 # How does the server and website work?
 ## File structure
-Html files are always in the templates folder
-Images, videos, music files, etc. are always in the static folder.
+Html files are always in the <b>templates</b> folder.
+Images, videos and music files are always in the <b>static</b> folder.
 
 
 ## Links to other pages
-Links to other pages don't work the same way as with "classic" HTML. You need to use url_for(""). Just look at some example inside the index.html.  
+Links to other pages don't work the same way as with "classic" HTML. You need to use <b>url_for("")</b>. Just look at some example inside the <b>index.html</b>.  
 
 
 ## The layout
-The layout.html file contains all the information present on all pages of the website (navbar, footer, etc.).
+The <b>layout.html</b> file contains all the information present on all pages of the website (navbar, footer, etc.).
