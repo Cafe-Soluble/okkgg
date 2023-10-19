@@ -17,27 +17,45 @@ def men():
     # BEFORE ADDING DATABASE FEATURE : 
     products=[
         {
-            "model": "B&W - T-shirt Noir",
-            "path_img_preview": "images/products/men/tshirts/tshirt_001/tmm001p001.jpg"
+            "model_name": "B&W - T-shirt Noir",
+            "path_img": "",
+            "model_number": "1",
+            "type": "tshirt",
+            "gender": "men",
         },
         {
-            "model": "WATCHING OVER YOU - T-shirt OKKGG x Mr. Bertola",
-            "path_img_preview": "images/products/men/tshirts/tshirt_002/tmm002p001.jpg"
+            "model_name": "WATCHING OVER YOU - T-shirt OKKGG x Mr. Bertola",
+            "path_img": "",
+            "model_number": "2",
+            "type": "tshirt",
+            "gender": "men",
         },
         {
-            "model": "TEAMMATES - T-shirt collectif",
-            "path_img_preview": "images/products/men/tshirts/tshirt_003/tmm003p001.jpg"
+            "model_name": "TEAMMATES - T-shirt collectif",
+            "path_img": "",
+            "model_number": "3",
+            "type": "tshirt",
+            "gender": "men",
         },
         {
-            "model": "Femme à moustache - T-shirt x Marilyn",
-            "path_img_preview": "images/products/men/tshirts/tshirt_004/tmm004p001.jpg"
+            "model_name": "Femme à moustache - T-shirt x Marilyn",
+            "path_img": "",
+            "model_number": "4",
+            "type": "tshirt",
+            "gender": "men",
         },
         {
-            "model": "Moustache Rose - T-shirt basique",
-            "path_img_preview": "images/products/men/tshirts/tshirt_005/tmm005p001.jpg"
+            "model_name": "Moustache Rose - T-shirt basique",
+            "path_img": "",
+            "model_number": "5",
+            "type": "tshirt",
+            "gender": "men",
         }
     ]
-              
+
+    for product in products:
+        product['path_img'] = 'images/products/'+product['gender']+'/'+product['type']+'/'+product['model_number']+'/'   
+        print(product['path_img'])
 
     return render_template("men.html", title="Men", nbProducts=len(products), products=products)
 

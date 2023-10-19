@@ -11,11 +11,17 @@
         <p>Category</p>
     </div>
     <div class="product-view">
-        <div class="products-container" style="display: flex; flex-wrap: wrap;">
+        <div class="products-container" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
             {% for i in range(nbProducts) %}
             <div class="product">
-                <div class="product_icon"><img  src="{{ url_for('static', filename=products[i]["path_img_preview"]) }}" alt="{{PRODUCT_NAME}}"  height="350px" width="350px"> </div>
-                <p>{{products[i]["model"]}}</p>
+                <div class="product_icon">
+                    <img  src="{{ url_for('static', filename=products[i]["path_img"]+'1.jpg') }}" alt="{{PRODUCT_NAME}}"  height="350px" width="350px" class="image-1"> 
+                    <div class="crop-img image-2">
+                        <img  src="{{ url_for('static', filename=products[i]["path_img"]+"2.jpg") }}" alt="{{PRODUCT_NAME}}"  height="auto" width="350px"> 
+                    </div>
+                    <figcaption>Quick overview</figcaption>
+                </div>
+                <p>{{products[i]["model_name"]}}</p>
                 <p class="add-to-cart">Add to cart</p>
             </div>
             {% endfor %}
@@ -26,4 +32,11 @@
 
 
 
+
+  
+
+
 {% endblock content %}
+
+
+

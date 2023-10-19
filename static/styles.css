@@ -297,6 +297,7 @@ a{
     grid-row: 2 / 8;
     border: solid red;
     background-color: aliceblue;
+    padding-left: min(50px, 5%)
   }
 
   .product-view {
@@ -307,8 +308,11 @@ a{
   }
 
   .product{
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 350px;
+    text-align: center;
+    overflow:hidden
   }
 
   .add-to-cart{
@@ -327,5 +331,57 @@ a{
   .product:hover .add-to-cart{
     visibility: visible;
     animation: fadein 1s;
+  }
 
+  .product:hover figcaption{
+    transform:translateY(-40px);
+    visibility: visible; 
+    transition:.3s ease-in-out;
+  }
+
+  figcaption{
+    width:350px; 
+    line-height:40px; 
+    color: white; 
+    text-align:center;
+    background: rgba(0, 0, 0, 0.5); 
+    transition:.3s ease-in-out;
+    visibility: hidden;
+}
+
+
+
+  /* TEST image OVER image */
+
+.product_icon {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .image-1, .image-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .image-2 {
+
+    opacity: 0; /* Vous pouvez ajuster l'opacité pour contrôler la transparence de la seconde image */
+  } 
+
+  .product:hover .image-2{
+    opacity: 1;
+  }
+
+
+  .crop-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: center;
   }
