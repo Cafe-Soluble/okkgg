@@ -13,18 +13,33 @@ def index():
 
 @app.route('/men')
 def men():
+    
+    # BEFORE ADDING DATABASE FEATURE : 
     products=[
         {
-            "model": "t-shirt noir",
+            "model": "B&W - T-shirt Noir",
             "path_img_preview": "images/products/men/tshirts/tshirt_001/tmm001p001.jpg"
         },
         {
-            "model": "t-shirt blanc",
+            "model": "WATCHING OVER YOU - T-shirt OKKGG x Mr. Bertola",
             "path_img_preview": "images/products/men/tshirts/tshirt_002/tmm002p001.jpg"
+        },
+        {
+            "model": "TEAMMATES - T-shirt collectif",
+            "path_img_preview": "images/products/men/tshirts/tshirt_003/tmm003p001.jpg"
+        },
+        {
+            "model": "Femme à moustache - T-shirt x Marilyn",
+            "path_img_preview": "images/products/men/tshirts/tshirt_004/tmm004p001.jpg"
+        },
+        {
+            "model": "Moustache Rose - T-shirt basique",
+            "path_img_preview": "images/products/men/tshirts/tshirt_005/tmm005p001.jpg"
         }
     ]
               
-    return render_template("men.html", title="Men", nbProducts=2, products=products)
+
+    return render_template("men.html", title="Men", nbProducts=len(products), products=products)
 
 
 @app.route('/women')
