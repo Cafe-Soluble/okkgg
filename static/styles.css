@@ -254,6 +254,15 @@ a{
     }
 }
 
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 /* END FADEIN EFFECT */
 
 
@@ -263,3 +272,60 @@ a{
 .orange-icon {
     color: orange;
 }
+
+
+/* MEN PAGE */
+
+.wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) minmax(500px, auto) 0.2fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+  }
+  .title-collection {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border: solid red;
+    background-color: aliceblue;
+    text-align: center;
+  }
+
+  .sort-by {
+    grid-column: 1;
+    grid-row: 2 / 8;
+    border: solid red;
+    background-color: aliceblue;
+  }
+
+  .product-view {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+    border: solid red;
+    background-color: aliceblue;
+  }
+
+  .product{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .add-to-cart{
+    background-color: rgb(236, 71, 59);
+    color: aliceblue;
+    border-radius: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    visibility: hidden;
+ 
+
+
+  }
+
+  .product:hover .add-to-cart{
+    visibility: visible;
+    animation: fadein 1s;
+
+  }

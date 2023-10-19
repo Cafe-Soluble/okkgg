@@ -2,9 +2,27 @@
 {% block content %}
 
 
-    <p>
-        Work in progress...
-    </p>
+<div class="wrapper">
+    <div class="title-collection"><h2>Men collection</h2></div>
+    <div class="sort-by"><h3>Sort by</h3>
+        <p>Price</p>
+        <p>Color</p>
+        <p>Size</p>
+        <p>Category</p>
+    </div>
+    <div class="product-view">
+        <div class="products-container" style="display: flex; flex-wrap: wrap;">
+            {% for i in range(nbProducts) %}
+            <div class="product">
+                <div class="product_icon"><img  src="{{ url_for('static', filename=products[i]["path_img_preview"]) }}" alt="{{PRODUCT_NAME}}"  height="350px" width="350px"> </div>
+                <p>{{products[i]["model"]}}</p>
+                <p class="add-to-cart">Add to cart</p>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
 
 
 

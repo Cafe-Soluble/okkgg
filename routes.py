@@ -13,7 +13,18 @@ def index():
 
 @app.route('/men')
 def men():
-    return render_template("men.html", title="Men")
+    products=[
+        {
+            "model": "t-shirt noir",
+            "path_img_preview": "images/products/men/tshirts/tshirt_001/tmm001p001.jpg"
+        },
+        {
+            "model": "t-shirt blanc",
+            "path_img_preview": "images/products/men/tshirts/tshirt_002/tmm002p001.jpg"
+        }
+    ]
+              
+    return render_template("men.html", title="Men", nbProducts=2, products=products)
 
 
 @app.route('/women')
