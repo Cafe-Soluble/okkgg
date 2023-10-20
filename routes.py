@@ -84,3 +84,7 @@ def login():
 @app.route('/basket')
 def basket():
     return render_template("basket.html", title="Panier")
+
+@app.route('/test')
+def test():
+    return render_template("test.html")

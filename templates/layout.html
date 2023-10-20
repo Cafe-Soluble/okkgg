@@ -20,6 +20,25 @@
     <!-- Ma feuille CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 
+
+    <style>
+      body {
+          animation: fadeInAnimation ease 800ms;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          background-color: black;
+      }
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+  </style>
+
+
 	
     {% if title %}
         <title>OKKGG | {{ title }}</title>

@@ -282,20 +282,29 @@ a{
     grid-template-columns: minmax(150px, 300px) minmax(500px, auto) 0.2fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    background-image: url("/static/images/background/bw_tshirts_bg_2.jpg"); /* Spécifiez le chemin de votre image de fond */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
-  }
-  .title-collection {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    border: solid red;
-    background-color: aliceblue;
-    text-align: center;
-  }
 
+.title-gender-collection {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
+  color:aliceblue;
+  height: 15vw;
+  max-height: 200px;
+  /* background-color: rgba(22, 22, 22, 0.938); */
+  background: radial-gradient(ellipse at center, rgba(17, 17, 17, 0.712), transparent 70% );
+  background-size: 900px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
   .sort-by {
     grid-column: 1;
     grid-row: 2 / 8;
-    border: solid red;
     background-color: aliceblue;
     padding-left: min(50px, 5%)
   }
@@ -303,8 +312,10 @@ a{
   .product-view {
     grid-column: 2 / 3;
     grid-row: 2 / 6;
-    border: solid red;
     background-color: aliceblue;
+
+
+    /* background-color: aliceblue; */
   }
 
   .product{
@@ -323,8 +334,6 @@ a{
     padding-bottom: 5px;
     text-align: center;
     visibility: hidden;
- 
-
 
   }
 
@@ -345,8 +354,10 @@ a{
     color: white; 
     text-align:center;
     background: rgba(0, 0, 0, 0.5); 
-    transition:.3s ease-in-out;
-    visibility: hidden;
+    /* transition:.3s ease-in-out; */
+    position: absolute;
+    bottom: 200;
+    
 }
 
 
