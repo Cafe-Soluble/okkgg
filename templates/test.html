@@ -1,44 +1,88 @@
-
 <!DOCTYPE html>
 <html>
-  
-<head>
-    <title>
-        How to create fade-in effect
-        on page load using CSS
-    </title>
-  
+  <title>Titre du document</title>
+  <head>
     <style>
-        body {
-            animation: fadeInAnimation ease 1s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+      #gallery {
+        width: 600px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        margin: 100px auto;
+        border: 2px solid #003c72;
+      }
+      #navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      #navigation li {
+        padding: 0;
+        margin: 0;
+        margin: 5px 0 20px;
+      }
+      #navigation li a img {
+        display: block;
+        border: none;
+      }
+      #navigation li a {
+        display: block;
+      }
+      #full-picture {
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        float: center;
+      }
+      #full-picture img {
+        width: 100%;
+      }
     </style>
-</head>
-  
-<body>
-    <h1 style="color: green">
-        GeeksForGeeks
-    </h1>
-     
-    <b>
-        How to create fade-in effect
-        on page load using CSS
-    </b>
-     
-    <p>
-        This page will fade in
-        after loading
-    </p>
-</body>
-  
+  </head>
+  <body>
+    <div id="gallery">
+      <ul id="navigation">
+        <li>
+          <a href="#picture1">
+            <img alt="small house 1" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p001.jpg") }}" width="35%"/>
+        </a>
+        </li>
+        <li>
+          <a href="#picture2">
+            <img alt="small house 2" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p005.jpg") }}" width="35%"/>
+          </a>
+        </li>
+        <li>
+          <a href="#picture3">
+            <img alt="small house 3" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p003.jpg") }}" width="35%"/>
+          </a>
+        </li>
+        <li>
+          <a href="#picture4">
+            <img alt="small house 4" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p004.jpg") }}" width="35%"/>
+          </a>
+        </li>
+      </ul>
+      <div id="full-picture">
+        <div>
+          <a name="picture1"></a>
+          <img alt="Large house 1" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p001.jpg") }}" width="35%"/>
+        </div>
+        <div>
+          <a name="picture2"></a>
+          <img alt="Large house 2" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p005.jpg") }}" width="35%"/>
+        </div>
+        <div>
+          <a name="picture3"></a>
+          <img alt="Large house 3" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p003.jpg") }}" width="35%"/>
+        </div>
+        <div>
+          <a name="picture4"></a>
+          <img alt="Large house 4" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p004.jpg") }}" width="35%"/>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -15,10 +15,12 @@
             {% for i in range(nbProducts) %}
             <div class="product">
                 <div class="product_icon">
+                    <a href="/product/{{products[i]["sku"]}}">
                     <img  src="{{ url_for('static', filename=products[i]["path_img"]+'1.jpg') }}" alt="{{PRODUCT_NAME}}"  height="350px" width="350px" class="image-1"> 
                     <div class="crop-img image-2">
                         <img  src="{{ url_for('static', filename=products[i]["path_img"]+"2.jpg") }}" alt="{{PRODUCT_NAME}}"  height="auto" width="350px"> 
                     </div>
+                    </a>
                     <figcaption>Quick overview</figcaption>
                 </div>
                 <p>{{products[i]["model_name"]}}</p>

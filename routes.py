@@ -3,6 +3,53 @@ import datetime
 
 app = Flask(__name__)
 
+
+
+    
+    # BEFORE ADDING DATABASE FEATURE : 
+products=[
+    {
+        "model_name": "B&W - T-shirt Noir",
+        "path_img": "",
+        "model_number": "1",
+        "type": "tshirt",
+        "gender": "men",
+        "sku": "BWM01"
+    },
+    {
+        "model_name": "WATCHING OVER YOU - T-shirt OKKGG x Mr. Bertola",
+        "path_img": "",
+        "model_number": "2",
+        "type": "tshirt",
+        "gender": "men",
+        "sku": "ALEW01"
+    },
+    {
+        "model_name": "TEAMMATES - T-shirt collectif",
+        "path_img": "",
+        "model_number": "3",
+        "type": "tshirt",
+        "gender": "men",
+        "sku": "TEAMM01"
+    },
+    {
+        "model_name": "Femme à moustache - T-shirt x Marilyn",
+        "path_img": "",
+        "model_number": "4",
+        "type": "tshirt",
+        "gender": "men",
+        "sku": "MOUSM01"
+    },
+    {
+        "model_name": "Moustache Rose - T-shirt basique",
+        "path_img": "",
+        "model_number": "5",
+        "type": "tshirt",
+        "gender": "men",
+        "sku": "PINKM01"
+    }
+]
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -13,45 +60,7 @@ def index():
 
 @app.route('/men')
 def men():
-    
-    # BEFORE ADDING DATABASE FEATURE : 
-    products=[
-        {
-            "model_name": "B&W - T-shirt Noir",
-            "path_img": "",
-            "model_number": "1",
-            "type": "tshirt",
-            "gender": "men",
-        },
-        {
-            "model_name": "WATCHING OVER YOU - T-shirt OKKGG x Mr. Bertola",
-            "path_img": "",
-            "model_number": "2",
-            "type": "tshirt",
-            "gender": "men",
-        },
-        {
-            "model_name": "TEAMMATES - T-shirt collectif",
-            "path_img": "",
-            "model_number": "3",
-            "type": "tshirt",
-            "gender": "men",
-        },
-        {
-            "model_name": "Femme à moustache - T-shirt x Marilyn",
-            "path_img": "",
-            "model_number": "4",
-            "type": "tshirt",
-            "gender": "men",
-        },
-        {
-            "model_name": "Moustache Rose - T-shirt basique",
-            "path_img": "",
-            "model_number": "5",
-            "type": "tshirt",
-            "gender": "men",
-        }
-    ]
+
 
     for product in products:
         product['path_img'] = 'images/products/'+product['gender']+'/'+product['type']+'/'+product['model_number']+'/'   
@@ -88,3 +97,30 @@ def basket():
 @app.route('/test')
 def test():
     return render_template("test.html")
+
+
+@app.route('/product/<model>', methods=['GET'])
+def animals(model):
+    
+    # BEFORE ADDING DATABASE & SQL REQUEST
+    # WILL BE CHANGE LATER
+
+    for i, product in enumerate(products):
+        if product["sku"] == model:
+            # L'index i correspond au dictionnaire avec la valeur recherchée
+            print("L'index du dictionnaire correspondant est :", i)
+            break  # Vous pouvez arrêter la recherche si vous avez trouvé une correspondance
+    else:
+        # Ce bloc est exécuté si la boucle s'exécute jusqu'à la fin sans correspondance
+        print("Aucune correspondance trouvée.")
+        i = "404"
+
+    print(i)
+    if i != "404":
+        print("We found the product")
+        print(f"i = {i}")
+        model=products[i]
+    else:
+        print("Can't find the product")
+        model=False
+    return render_template('product.html', title='Product Details', model=model)
