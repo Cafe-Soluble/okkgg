@@ -1,5 +1,0 @@
-tw001p001.png
-t = catégorie "T shirt"
-w = catégorie "Women"
-m001 = identifiant du modèle "m001" (tshirt noir)
-p001 = photo numéro 1 du tshirt
