@@ -1,88 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <title>Titre du document</title>
-  <head>
-    <style>
-      #gallery {
-        width: 600px;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-        margin: 100px auto;
-        border: 2px solid #003c72;
-      }
-      #navigation {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      #navigation li {
-        padding: 0;
-        margin: 0;
-        margin: 5px 0 20px;
-      }
-      #navigation li a img {
-        display: block;
-        border: none;
-      }
-      #navigation li a {
-        display: block;
-      }
-      #full-picture {
-        width: 600px;
-        height: 400px;
-        overflow: hidden;
-        float: center;
-      }
-      #full-picture img {
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="gallery">
-      <ul id="navigation">
-        <li>
-          <a href="#picture1">
-            <img alt="small house 1" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p001.jpg") }}" width="35%"/>
-        </a>
-        </li>
-        <li>
-          <a href="#picture2">
-            <img alt="small house 2" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p005.jpg") }}" width="35%"/>
-          </a>
-        </li>
-        <li>
-          <a href="#picture3">
-            <img alt="small house 3" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p003.jpg") }}" width="35%"/>
-          </a>
-        </li>
-        <li>
-          <a href="#picture4">
-            <img alt="small house 4" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p004.jpg") }}" width="35%"/>
-          </a>
-        </li>
-      </ul>
-      <div id="full-picture">
-        <div>
-          <a name="picture1"></a>
-          <img alt="Large house 1" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p001.jpg") }}" width="35%"/>
-        </div>
-        <div>
-          <a name="picture2"></a>
-          <img alt="Large house 2" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p005.jpg") }}" width="35%"/>
-        </div>
-        <div>
-          <a name="picture3"></a>
-          <img alt="Large house 3" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p003.jpg") }}" width="35%"/>
-        </div>
-        <div>
-          <a name="picture4"></a>
-          <img alt="Large house 4" src="{{ url_for('static', filename="images/products/men/tshirt/1/tmm001p004.jpg") }}" width="35%"/>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_test.css') }}">
+
+  <title>Document</title>
+</head>
+<body>
+    <div class="SHOPPING">
+      <p> panier</p>
+      <div class="container">
+        <div class="div1"><i class="fa-solid fa-bag-shopping fa-2xl"></i></div>
+        <div class="div2">9</div>
       </div>
+      
     </div>
-  </body>
+
+ 
+
+
+  <script src="https://kit.fontawesome.com/0c3e7b6922.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
