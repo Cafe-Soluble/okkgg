@@ -94,11 +94,6 @@ def login():
 def basket():
     return render_template("basket.html", title="Panier")
 
-@app.route('/test')
-def test():
-    return render_template("test.html")
-
-
 @app.route('/product/<model>', methods=['GET'])
 def animals(model):
     
@@ -124,3 +119,12 @@ def animals(model):
         print("Can't find the product")
         model=False
     return render_template('product.html', title='Product Details', model=model)
+
+
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
+@app.route('/payment')
+def payment():
+    return render_template("payment.html")
