@@ -73,9 +73,9 @@ def men():
 def women():
     return render_template("women.html", title="Women")
 
-@app.route('/about_us')
-def about_us():
-    return render_template("about_us.html", title="About Us")
+@app.route('/about')
+def about():
+    return render_template("about.html", title="About Us")
 
 @app.route('/lookbook')
 def lookbook():

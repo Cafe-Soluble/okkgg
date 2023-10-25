@@ -197,7 +197,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     transform: scale(1);
-    min-height: 2000px;
+    min-height: 1000px;
     max-height: 100vh;
 }
 
@@ -209,11 +209,45 @@ a{
 } */
 
 .lookbook-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: rgba(247, 247, 247, 0.644);
     color: black;
-    vertical-align: center;
+    
+    display: flex;
+    align-items: center;    
+    max-width: 700px;
 }
 
+.lookbook-text-container{
+    width: 400px;
+
+}
+.title-lookbook{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+.home-lookbook-text-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    font-style: italic;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.home-lookbook-text-2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    font-style: italic;
+    font-weight:bolder;
+    line-height: 25px;
+    text-align: justify;
+}
 
 /* HOME CONTENT END */
 
